@@ -5,3 +5,9 @@ node_modules/
 dist/
 dist-ssr/
 *.local
+
+# Hidden images 
+avatar.png
+testimonials/
+public/testimonials/
+public/testimonials/*
