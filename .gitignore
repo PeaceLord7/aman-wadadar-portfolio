@@ -6,8 +6,6 @@ dist/
 dist-ssr/
 *.local
 
-# Hidden images 
+# Hidden images (kept locally, removed from GitHub)
 avatar.png
-testimonials/
 public/testimonials/
-public/testimonials/*
