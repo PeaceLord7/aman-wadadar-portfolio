@@ -195,7 +195,7 @@ export default function App() {
       <div className="hero-avatar-wrap fade-in">
         <div className="avatar-ring">
           <div className="avatar-inner">
-            <img src="avatar.png" alt="Aman Wadadar" className="avatar-img" />
+            <img src={import.meta.env.VITE_AVATAR_URL || "avatar.png"} alt="Aman Wadadar" className="avatar-img" />
           </div>
         </div>
       </div>
@@ -657,7 +657,7 @@ export default function App() {
           
           <div className="testimonial-card">
             <div className="t-header">
-              <img className="t-avatar" src="/testimonials/sowmya.jpg" alt="Sowmya Peyyeti" />
+              <img className="t-avatar" src={import.meta.env.VITE_SOWMYA_URL || "/testimonials/sowmya.jpg"} alt="Sowmya Peyyeti" />
               <div className="t-info">
                 <div className="t-name">Sowmya Peyyeti</div>
                 <div className="t-role">QA Analyst/Test engineer</div>
@@ -670,7 +670,7 @@ export default function App() {
 
           <div className="testimonial-card">
             <div className="t-header">
-              <img className="t-avatar" src="/testimonials/sarah.jpg" alt="Sarah Dempsey" />
+              <img className="t-avatar" src={import.meta.env.VITE_SARAH_URL || "/testimonials/sarah.jpg"} alt="Sarah Dempsey" />
               <div className="t-info">
                 <div className="t-name">Sarah Dempsey</div>
                 <div className="t-role">IT Project Manager</div>
@@ -683,7 +683,7 @@ export default function App() {
 
           <div className="testimonial-card">
             <div className="t-header">
-              <img className="t-avatar" src="/testimonials/ravi.jpg" alt="Ravi Gaur" />
+              <img className="t-avatar" src={import.meta.env.VITE_RAVI_URL || "/testimonials/ravi.jpg"} alt="Ravi Gaur" />
               <div className="t-info">
                 <div className="t-name">Ravi Gaur</div>
                 <div className="t-role">Senior Software Engineer</div>
@@ -696,7 +696,7 @@ export default function App() {
 
           <div className="testimonial-card">
             <div className="t-header">
-              <img className="t-avatar" src="/testimonials/moti.jpg" alt="Shyam Dua" />
+              <img className="t-avatar" src={import.meta.env.VITE_SHYAM_URL || "/testimonials/moti.jpg"} alt="Shyam Dua" />
               <div className="t-info">
                 <div className="t-name">Shyam Dua</div>
                 <div className="t-role">Web Development | UiPath RPA</div>
@@ -709,7 +709,7 @@ export default function App() {
 
           <div className="testimonial-card">
             <div className="t-header">
-              <img className="t-avatar" src="/testimonials/sanjeev.jpg" alt="Sanjeev Hippurgikar" />
+              <img className="t-avatar" src={import.meta.env.VITE_SANJEEV_URL || "/testimonials/sanjeev.jpg"} alt="Sanjeev Hippurgikar" />
               <div className="t-info">
                 <div className="t-name">Sanjeev Hippurgikar</div>
                 <div className="t-role">Software Engineer | AWS Certified</div>

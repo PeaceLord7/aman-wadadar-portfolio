@@ -5,6 +5,7 @@ node_modules/
 dist/
 dist-ssr/
 *.local
+.env
 
 # Hidden images (kept locally, removed from GitHub)
 avatar.png
