@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './style.css';
 
 export default function App() {
@@ -121,10 +121,11 @@ export default function App() {
     };
   }, []);
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
   return (
     <>
-
-
       {/*  NAV  */}
       <nav>
         <a className="nav-logo" href="#home">Aman Wadadar <span> (QA Professional)</span></a>
@@ -143,23 +144,27 @@ export default function App() {
           )}
           <a className="nav-cta" href="mailto:amanwadadar@gmail.com">Hire Me</a>
         </div>
-        <button className="hamburger" aria-label="Menu">
+        <button
+          className={`hamburger ${isMenuOpen ? 'open' : ''}`}
+          onClick={toggleMenu}
+          aria-label="Menu"
+        >
           <span></span><span></span><span></span>
         </button>
       </nav>
 
       {/*  MOBILE MENU  */}
-      <div className="mobile-menu" id="mobileMenu">
-        <button className="mobile-close">✕</button>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#awards">Awards</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact</a>
+      <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`} id="mobileMenu">
+        <button className="mobile-close" onClick={closeMenu}>✕</button>
+        <a href="#about" onClick={closeMenu}>About</a>
+        <a href="#skills" onClick={closeMenu}>Skills</a>
+        <a href="#experience" onClick={closeMenu}>Experience</a>
+        <a href="#projects" onClick={closeMenu}>Projects</a>
+        <a href="#awards" onClick={closeMenu}>Awards</a>
+        <a href="#testimonials" onClick={closeMenu}>Testimonials</a>
+        <a href="#contact" onClick={closeMenu}>Contact</a>
         {import.meta.env.VITE_RESUME_URL && (
-          <a href={import.meta.env.VITE_RESUME_URL} target="_blank" rel="noreferrer" className="mobile-resume">Download Resume</a>
+          <a href={import.meta.env.VITE_RESUME_URL} target="_blank" rel="noreferrer" className="mobile-resume" onClick={closeMenu}>Download Resume</a>
         )}
       </div>
 
@@ -232,55 +237,13 @@ export default function App() {
               <p>
                 With vast experience across <strong>40+ projects</strong>, I have deep knowledge in Java, Selenium, Playwright, TestNG, CI/CD integration, Maven, MySQL, TestRail, and much more.
               </p>
+            </div>
+            <div className="about-certs">
               <div className="cert-list">
                 <span className="cert-pill">🏅 Oracle Java SE 6 Certified</span>
                 <span className="cert-pill">🏅 Agile Practitioner Certified</span>
                 <span className="cert-pill">☁️ AWS Cloud Practitioner</span>
                 <span className="cert-pill">🏅 ISTQB Foundation 4.0</span>
-              </div>
-            </div>
-            <div className="info-cards">
-              <div className="info-card">
-                <div className="info-icon">📍</div>
-                <div>
-                  <div className="info-card-label">Location</div>
-                  <div className="info-card-value">Dehradun, Uttarakhand, India</div>
-                </div>
-              </div>
-              <div className="info-card">
-                <div className="info-icon">📧</div>
-                <div>
-                  <div className="info-card-label">Email</div>
-                  <div className="info-card-value"><a href="mailto:amanwadadar@gmail.com">amanwadadar@gmail.com</a></div>
-                </div>
-              </div>
-              <div className="info-card">
-                <div className="info-icon">📱</div>
-                <div>
-                  <div className="info-card-label">Phone</div>
-                  <div className="info-card-value"><a href="tel:+919927665268">+91 9927665268</a></div>
-                </div>
-              </div>
-              <div className="info-card">
-                <div className="info-icon">🎓</div>
-                <div>
-                  <div className="info-card-label">Education</div>
-                  <div className="info-card-value">B.Tech CSE – DIT University, Dehradun (2019)</div>
-                </div>
-              </div>
-              <div className="info-card">
-                <div className="info-icon">💼</div>
-                <div>
-                  <div className="info-card-label">LinkedIn</div>
-                  <div className="info-card-value"><a href="https://linkedin.com/in/aman-wadadar-483859b1" target="_blank">aman-wadadar-483859b1</a></div>
-                </div>
-              </div>
-              <div className="info-card">
-                <div className="info-icon">🐙</div>
-                <div>
-                  <div className="info-card-label">GitHub</div>
-                  <div className="info-card-value"><a href="https://github.com/PeaceLord7" target="_blank">github.com/PeaceLord7</a></div>
-                </div>
               </div>
             </div>
           </div>
