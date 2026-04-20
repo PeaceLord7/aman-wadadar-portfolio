@@ -138,12 +138,6 @@ export default function App() {
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <div className="nav-actions">
-          {import.meta.env.VITE_RESUME_URL && (
-            <a className="btn-resume-nav" href={import.meta.env.VITE_RESUME_URL} target="_blank" rel="noreferrer">Resume</a>
-          )}
-          <a className="nav-cta" href="mailto:amanwadadar@gmail.com">Hire Me</a>
-        </div>
         <button
           className={`hamburger ${isMenuOpen ? 'open' : ''}`}
           onClick={toggleMenu}
@@ -163,9 +157,6 @@ export default function App() {
         <a href="#awards" onClick={closeMenu}>Awards</a>
         <a href="#testimonials" onClick={closeMenu}>Testimonials</a>
         <a href="#contact" onClick={closeMenu}>Contact</a>
-        {import.meta.env.VITE_RESUME_URL && (
-          <a href={import.meta.env.VITE_RESUME_URL} target="_blank" rel="noreferrer" className="mobile-resume" onClick={closeMenu}>Download Resume</a>
-        )}
       </div>
 
       {/*  HERO  */}
