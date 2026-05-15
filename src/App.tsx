@@ -165,7 +165,7 @@ export default function App() {
         <div className="hero-glow2"></div>
         <div className="hero-inner">
           <div className="hero-content fade-in">
-            <div className="hero-badge">Available for Opportunities</div>
+            <div className="hero-badge">Quality Assurance Consultation</div>
             <h1>Aman<br /><span className="accent">Wadadar</span></h1>
             <div className="hero-title-sub">Senior QA Analyst & Project Coordinator</div>
             <p className="hero-desc">
@@ -614,11 +614,24 @@ export default function App() {
       <section id="testimonials">
         <div className="section-inner">
           <div className="section-tag">06 · Testimonials</div>
-          <h2>Client <span>Feedback</span></h2>
+          <h2>Testimonials and <span>Feedback</span></h2>
           <p className="section-lead">What professionals and clients have to say about working with me.</p>
 
           <div className="testimonials-slider fade-in">
             <div className="testimonial-track">
+
+              <div className="testimonial-card">
+                <div className="t-header">
+                  <img className="t-avatar" src={import.meta.env.VITE_STEPHEN_URL || "/testimonials/stephen.jpg"} alt="Stephen Stewart" />
+                  <div className="t-info">
+                    <div className="t-name">Stephen Stewart</div>
+                    <div className="t-role">Program Manager at Particle41</div>
+                  </div>
+                </div>
+                <div className="t-body">
+                  "Aman is an exceptional QA professional who consistently delivers high-quality results. His attention to detail and ability to coordinate complex projects make him a valuable asset to any team. I highly recommend him for his technical expertise and leadership."
+                </div>
+              </div>
 
               <div className="testimonial-card">
                 <div className="t-header">
