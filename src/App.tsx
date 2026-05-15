@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import './style.css';
 
 export default function App() {
@@ -818,6 +820,8 @@ export default function App() {
       </footer>
 
 
+      <Analytics />
+      <SpeedInsights />
     </>
   );
 }
