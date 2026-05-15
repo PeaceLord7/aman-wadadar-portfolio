@@ -635,6 +635,19 @@ export default function App() {
 
               <div className="testimonial-card">
                 <div className="t-header">
+                  <img className="t-avatar" src={import.meta.env.VITE_SHIVRAJ_URL || "/testimonials/shivraj.jpg"} alt="Shivraj Kadam" />
+                  <div className="t-info">
+                    <div className="t-name">Shivraj Kadam</div>
+                    <div className="t-role">ISTQB Certified Senior QA Analyst</div>
+                  </div>
+                </div>
+                <div className="t-body">
+                  "I enjoyed working with Aman as a fellow QA. As a Senior QA and Project Coordinator, he guided the team across AI testing, Playwright, AWS, and performance testing. His approachable nature made collaboration easy. He helped improve QA practices and team standards. His curiosity for new technologies brought fresh insights. Beyond work, his energy and travel stories made the workplace engaging."
+                </div>
+              </div>
+
+              <div className="testimonial-card">
+                <div className="t-header">
                   <img className="t-avatar" src={import.meta.env.VITE_SOWMYA_URL || "/testimonials/sowmya.jpg"} alt="Sowmya Peyyeti" />
                   <div className="t-info">
                     <div className="t-name">Sowmya Peyyeti</div>
