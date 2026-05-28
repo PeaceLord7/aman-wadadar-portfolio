@@ -1,6 +1,6 @@
 # Welcome to My Personal Portfolio — Aman Wadadar
 
-Hi there! I'm **Aman Wadadar**, and this is my professional home on the web. I am a Senior QA Analyst and Project Coordinator dedicated to delivering high-quality software and leading successful tech projects.
+Hi there! I'm **Aman Wadadar**, and this is my professional home on the web. I am a Senior Test Analyst and Quality Assurance Consultant dedicated to delivering high-quality software and leading successful tech projects.
 
 This website is designed to give you a quick and beautiful look into my career journey, my technical skills, and what it’s like to work with me.
 
@@ -9,7 +9,7 @@ This website is designed to give you a quick and beautiful look into my career j
 ## 🌟 What You'll Find Here
 
 *   **My Story:** A brief look at who I am and my path over **7 successful years** in the IT industry.
-*   **A Proven Track Record:** Highlights from over **40+ projects** I've helped bring to life.
+*   **A Proven Track Record:** Highlights from over **45+ projects** I've helped bring to life.
 *   **Expert Toolkit:** A showcase of the modern tools and technologies I use to ensure software excellence.
 *   **Real Feedback:** Read honest testimonials from my colleagues and clients about our collaborations.
 *   **Achievements:** A gallery of awards and certifications I've earned along the way.

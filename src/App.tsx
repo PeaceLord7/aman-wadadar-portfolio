@@ -167,11 +167,11 @@ export default function App() {
         <div className="hero-glow2"></div>
         <div className="hero-inner">
           <div className="hero-content fade-in">
-            <div className="hero-badge">Quality Assurance Consultation</div>
+            <div className="hero-badge">QA Consultation Available</div>
             <h1>Aman<br /><span className="accent">Wadadar</span></h1>
-            <div className="hero-title-sub">Senior QA Analyst & Project Coordinator</div>
+            <div className="hero-title-sub">Senior Test Analyst & Quality Assurance Consultant</div>
             <p className="hero-desc">
-              7 years of delivering flawless software quality across 40+ projects.
+              7 years of delivering flawless software quality across 45+ projects.
               Specializing in QA Automation, Performance Testing, Microservices, and AI-driven testing solutions.
             </p>
             <div className="hero-actions">
@@ -187,7 +187,7 @@ export default function App() {
                 <div className="stat-label">Years of Experience</div>
               </div>
               <div className="stat">
-                <div className="stat-num">40+</div>
+                <div className="stat-num">45+</div>
                 <div className="stat-label">Projects Delivered</div>
               </div>
               <div className="stat">
@@ -225,10 +225,10 @@ export default function App() {
                 I deliver intuitive, functional, and compelling quality solutions that fulfil user needs and surpass client expectations.
               </p>
               <p>
-                Currently working as a <strong>Project Coordinator & Senior QA Analyst</strong> at Particle41, Pune, managing AI-based, Farming SaaS, and Donation SaaS products. I lead cross-functional teams, spearhead automation initiatives, and drive quality at every stage of the SDLC.
+                Currently working as a <strong>Senior Test Analyst - Quality Engineering</strong> at Intersoft Data Labs, Gurugram. Previously, I was a <strong>Senior QA Engineer & Project Coordinator</strong> at Particle41, Pune, managing AI-based, Farming SaaS, and Donation SaaS products, where I led cross-functional teams, spearheaded automation initiatives, and drove quality across the SDLC.
               </p>
               <p>
-                With vast experience across <strong>40+ projects</strong>, I have deep knowledge in Java, Selenium, Playwright, TestNG, CI/CD integration, Maven, MySQL, TestRail, and much more.
+                With vast experience across <strong>45+ projects</strong>, I have deep knowledge in Java, Selenium, Playwright, TestNG, CI/CD integration, Maven, MySQL, TestRail, and much more.
               </p>
             </div>
             <div className="about-certs">
@@ -353,33 +353,14 @@ export default function App() {
             <div className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="tl-header">
-                <span className="tl-role">Project Coordinator</span>
-                <span className="tl-company">Particle41</span>
-                <span className="tl-date">📅 Dec 2025 – Present · Pune, India</span>
+                <span className="tl-role">Senior Test Analyst - Quality Engineering</span>
+                <span className="tl-company">Intersoft Data Labs</span>
+                <span className="tl-date">📅 May 2026 – Present · Gurugram, India</span>
               </div>
               <div className="tl-body">
                 <ul>
-                  <li>Managing 3 concurrent projects: AI-based domain, Farming SaaS, and Donation SaaS product</li>
-                  <li>Received the <strong>Empowering Award (Feb 2026)</strong> for helping the team achieve blocked tasks</li>
-                  <li>Client-facing role with end-to-end project delivery responsibility</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="timeline-item">
-              <div className="timeline-dot"></div>
-              <div className="tl-header">
-                <span className="tl-role">Senior Quality Assurance Analyst</span>
-                <span className="tl-company">Particle41</span>
-                <span className="tl-date">📅 Aug 2023 – Present · Pune, India</span>
-              </div>
-              <div className="tl-body">
-                <ul>
-                  <li>Led a QA team of 4 members with successful delivery of 5+ automation projects for US client</li>
-                  <li>Delivered 3+ microservices-based projects with Redis caching, AWS SQS, and RabbitMQ testing</li>
-                  <li>Authored Test Strategy and Test Planning Documentation for all major projects</li>
-                  <li>Conducted API testing on Postman and performance testing via JMeter & Azure Load Testing</li>
-                  <li>Managed test execution in TestRail; monitored logs in New Relic and AWS CloudWatch</li>
+                  <li>Maintaining coverage of the automation suite in Playwright JavaScript</li>
+                  <li>Migration of test scripts from Selenium Java to Playwright JavaScript</li>
                 </ul>
               </div>
             </div>
@@ -387,16 +368,17 @@ export default function App() {
             <div className="timeline-item">
               <div className="timeline-dot" style={{ background: "var(--accent2)" }}></div>
               <div className="tl-header">
-                <span className="tl-role">Senior Analyst Quality Engineering</span>
-                <span className="tl-company">Accenture</span>
-                <span className="tl-date">📅 Sep 2022 – Aug 2023 · Gurugram, India</span>
+                <span className="tl-role">Senior QA Engineer and Project Coordinator</span>
+                <span className="tl-company">Particle41</span>
+                <span className="tl-date">📅 Aug 2023 – May 2026 · Pune, India</span>
               </div>
               <div className="tl-body">
                 <ul>
-                  <li>Worked directly with UK clients on BFSI domain (mutual funds & investment plans)</li>
-                  <li>Selenium automation with Gauge Framework; API automation with SOAP UI & Groovy.io</li>
-                  <li>Led team on Password and Device Harvesting using ThreatMetrix</li>
-                  <li>Core member of the Java and QA Automation interview panel</li>
+                  <li>Built and scaled QA engineering capability by coaching 4 engineers, reducing onboarding time by 3 weeks through structured test playbooks, and leveraging AI-assisted tools (Claude Code, Cursor, Antigravity) to accelerate automation development, improve code quality, and streamline documentation workflows.</li>
+                  <li>Engineered 150+ Playwright scripts with parallel sharding, cutting end-to-end regression runtime from 6 hours to under 90 minutes; deployed ContextQA and DocketQA for AI agent validation with self-healing scripts via Playwright MCP, reducing flaky test rate by 40%.</li>
+                  <li>Spearheaded test strategy across 5+ automation projects and 3+ microservices initiatives, cutting post-release defect rates by 35% across US client accounts; executed JMeter load tests and AWS CloudWatch log analysis, identifying 3 critical bottlenecks before production release.</li>
+                  <li>Orchestrated 3 simultaneous cross-functional projects (AI, Farming SaaS, Donation SaaS), reducing stakeholder escalations by 60% through weekly status cadences and aligning product, development, and QA teams via AI-assisted requirement refinement and collaboration tools.</li>
+                  <li>Introduced a sprint governance framework across 2 distributed teams, improving milestone hit-rate from ~70% to 95% within 2 quarters through structured accountability and delivery processes.</li>
                 </ul>
               </div>
             </div>
@@ -404,17 +386,14 @@ export default function App() {
             <div className="timeline-item">
               <div className="timeline-dot" style={{ background: "var(--accent3)" }}></div>
               <div className="tl-header">
-                <span className="tl-role">Analyst & Developer</span>
-                <span className="tl-company">Tata Consultancy Services</span>
-                <span className="tl-date">📅 Jul 2019 – Aug 2022 · Hyderabad, India</span>
+                <span className="tl-role">Senior Analyst – Quality Engineering</span>
+                <span className="tl-company">Accenture</span>
+                <span className="tl-date">📅 Sep 2022 – Aug 2023 · Gurugram, India</span>
               </div>
               <div className="tl-body">
                 <ul>
-                  <li>Led US(W) project automation using Selenium + Java; developed Save Document Utility tool</li>
-                  <li>Integrated unit, smoke, and regression testing into automation pipeline</li>
-                  <li>Led OCP4 migration, fixing multiple APIs and delivering to production with zero defects</li>
-                  <li>Worked on Qtest–JIRA integration and multiple portal automations</li>
-                  <li>Received Best Team Award, On the Spot Award, and multiple client appreciations</li>
+                  <li>Architected a Selenium (Gauge) + SOAP UI (Groovy) test suite covering 200+ test cases for a UK-based mutual funds platform, uncovering 150+ defects in SIT/UAT.</li>
+                  <li>Spearheaded ThreatMetrix device and password harvesting validation; reduced fraud-detection false-positive rate by 25% through targeted API test coverage.</li>
                 </ul>
               </div>
             </div>
@@ -422,14 +401,14 @@ export default function App() {
             <div className="timeline-item">
               <div className="timeline-dot" style={{ background: "var(--muted)" }}></div>
               <div className="tl-header">
-                <span className="tl-role">Development Intern</span>
-                <span className="tl-company">63 Moons Technologies</span>
-                <span className="tl-date">📅 May 2018 – Jul 2018 · Mumbai, India</span>
+                <span className="tl-role">System Engineer – Quality Assurance</span>
+                <span className="tl-company">Tata Consultancy Services (TCS)</span>
+                <span className="tl-date">📅 Jul 2019 – Aug 2022 · Hyderabad, India</span>
               </div>
               <div className="tl-body">
                 <ul>
-                  <li>Developed SurveyMoons (data collector) frontend using Angular 4 & TypeScript</li>
-                  <li>Wrote SQL/PL queries to improve ER relationships between frontend and backend</li>
+                  <li>Developed a Selenium (Java) automation framework from scratch, covering 300+ test cases; integrated into CI/CD pipeline, cutting regression cycle time by 40%.</li>
+                  <li>Streamlined QTest-Jira integration and delivered a PDF Scanner Utility with zero post-release defects across 4 quarterly releases — earned Best Team Award.</li>
                 </ul>
               </div>
             </div>
@@ -451,7 +430,7 @@ export default function App() {
             <div className="project-card">
               <div className="project-header">
                 <div className="project-icon">🤖</div>
-                <div className="project-duration">Dec 2025 – Present</div>
+                <div className="project-duration">Dec 2025 – May 2026</div>
               </div>
               <div className="project-title">AI-Driven Testing for AI Agents</div>
               <div className="project-company">Particle41</div>
