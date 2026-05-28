@@ -65,22 +65,74 @@ export default function App() {
     });
 
     // ── CONTACT FORM ──
-    const contactForm = document.querySelector('.contact-form');
-    const handleFormSubmit = (e: Event) => {
+    const contactForm = document.querySelector('.contact-form') as HTMLFormElement | null;
+    const handleFormSubmit = async (e: Event) => {
       e.preventDefault();
       const nameInput = document.getElementById('name') as HTMLInputElement | null;
       const emailInput = document.getElementById('email') as HTMLInputElement | null;
       const subjectInput = document.getElementById('subject') as HTMLInputElement | null;
       const messageInput = document.getElementById('message') as HTMLTextAreaElement | null;
+      const sendButton = document.querySelector('.btn-send') as HTMLButtonElement | null;
+      const formSuccess = document.getElementById('form-success') as HTMLDivElement | null;
+
       if (nameInput && emailInput && subjectInput && messageInput) {
         const name = nameInput.value;
         const email = emailInput.value;
         const subject = subjectInput.value;
         const message = messageInput.value;
-        const mailtoLink = `mailto:amanwadadar@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
-        window.location.href = mailtoLink;
-        const formSuccess = document.getElementById('form-success') as HTMLDivElement | null;
-        if (formSuccess) formSuccess.style.display = 'block';
+
+        // Change button state to sending
+        if (sendButton) {
+          sendButton.disabled = true;
+          sendButton.textContent = 'Sending...';
+        }
+        if (formSuccess) {
+          formSuccess.style.display = 'none';
+        }
+
+        try {
+          const response = await fetch('https://formsubmit.co/ajax/amanwadadar@gmail.com', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+              name: name,
+              email: email,
+              _subject: `Portfolio Contact: ${subject}`,
+              message: message,
+              _honey: '', // Honeypot field to prevent spam
+              _captcha: 'false' // Disable captcha (relying on AJAX honeypot)
+            })
+          });
+
+          if (response.ok) {
+            if (formSuccess) {
+              formSuccess.textContent = '✅ Message sent! I\'ll get back to you soon.';
+              formSuccess.style.color = 'var(--accent3)';
+              formSuccess.style.display = 'block';
+            }
+            // Clear form
+            if (contactForm) {
+              contactForm.reset();
+            }
+          } else {
+            throw new Error('Something went wrong');
+          }
+        } catch (error) {
+          console.error('Error sending message:', error);
+          if (formSuccess) {
+            formSuccess.textContent = '❌ Failed to send message. Please try again or email directly.';
+            formSuccess.style.color = '#ef4444'; // Red color
+            formSuccess.style.display = 'block';
+          }
+        } finally {
+          if (sendButton) {
+            sendButton.disabled = false;
+            sendButton.textContent = 'Send Message →';
+          }
+        }
       }
     };
     if (contactForm) {
